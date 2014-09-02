@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bgbar" >
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/settingselector" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="学僧记账"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+      
+    </FrameLayout>
+    
+    <com.hustunique.Views.StickyLayout
+		android:id="@+id/sticky_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+
+       <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#444"
+         >
+
+        <RelativeLayout
+	    android:id="@+id/progress_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="220dp"
+	    android:layout_weight="0"
+	    android:background="@drawable/progressbackground" >
+
+	    <com.hustunique.Views.MyCircle
+	        android:id="@+id/progress"
+	        android:layout_alignParentBottom="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="25dp" />
+
+	    <TextView
+	        android:id="@+id/expanse"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="87dp"
+	        android:text="￥899"
+	        android:textColor="#fff"
+	        android:textSize="35sp" />
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/progress"
+	        android:layout_marginBottom="25dp"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.5" />
+
+	        <TextView
+	            android:id="@+id/daysremian"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="本月还剩05天"
+	            android:textColor="#fff"
+	            android:textSize="16dp" />
+  			 <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.5" />
+
+	    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/spenttext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/linearLayout1"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="25dp"
+	        android:text="已支出"
+	        android:textColor="#fff"
+	        android:textSize="15dp" />
+
+	</RelativeLayout>
+
+        </LinearLayout>
+
+     	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical">
+
+    
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="162dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+	<LinearLayout 
+	    android:id="@+id/headerviewsecond"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/headerview_boarder">
+	    <RelativeLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    >
+
+            <ImageView
+                android:id="@+id/lastmonth"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/leftselector"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false" />
+
+			</RelativeLayout>
+            <TextView
+                android:id="@+id/date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06"
+                android:textColor="#787878"
+                android:textStyle="bold"
+                android:textSize="32sp" />
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="月"
+			    android:textColor="@android:color/darker_gray"
+			    android:textSize="14sp"/>
+          <RelativeLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    >
+            <ImageView
+                android:id="@+id/nextmonth"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightselector"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                 />
+
+			</RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dp" >
+
+                <TextView
+                    android:id="@+id/remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="剩余230"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+	</LinearLayout>
+     
+
+	<FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="153dp"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+		<RelativeLayout 
+		    android:id="@+id/touchlayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		<TextView 
+		    android:id="@+id/norecord_img"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="75dp"
+		    android:text="还没有记录哦"
+		    android:textSize="30sp"
+		    android:textColor="#9f9f9f"
+		   />	
+	   
+
+		 	<ListView 
+                android:id="@+id/expandablelist"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                ></ListView>
+	  	 <!--    <com.hustunique.Views.MyListView
+	         android:id="@+id/historylist"
+	         android:layout_width="fill_parent"
+	         android:layout_height="match_parent"
+	         android:layout_alignParentLeft="true"
+	         android:layout_alignParentTop="true"
+	         
+	        ></com.hustunique.Views.MyListView> 
+	     -->
+	   <android.support.v4.view.ViewPager
+        android:id="@+id/hist_list_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    </android.support.v4.view.ViewPager>
+	     
+	       <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_alignParentBottom="true"
+	        android:orientation="horizontal"
+	        android:layout_marginBottom="15dp"
+	       >
+
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+
+	        <ImageView
+	            android:id="@+id/add_btn"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:src="@drawable/icon_add"
+	            android:alpha="0.8" />
+
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+	    </LinearLayout>
+	    
+	    </RelativeLayout>
+	</FrameLayout>
+
+    </LinearLayout>
+    
+    </LinearLayout>
+    </com.hustunique.Views.StickyLayout>
+
+</LinearLayout>

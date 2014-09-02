@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/bgbar" >
+
+       <ImageView
+ 		    android:id="@+id/back"
+ 		    android:layout_width="57dp"
+ 		    android:layout_height="28dp"
+ 		    android:layout_marginBottom="5dp"
+ 		    android:layout_marginLeft="8dp"
+ 		    android:layout_marginTop="10dp"
+ 		    android:src="@drawable/back"
+ 		    android:clickable="true"
+ 		    android:focusable="true" >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="关 于"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+      
+    </FrameLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="#d4d4d4"
+        android:orientation="vertical" >
+        
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo" />
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="学僧记账"
+            android:textColor="#606060"
+            android:textSize="31sp"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="version 1.0"
+            android:textColor="#606060"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp"
+            android:text="Power by JazenHsu"
+            android:textColor="#e89128"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+
+</LinearLayout>

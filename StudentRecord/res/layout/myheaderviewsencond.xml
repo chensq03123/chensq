@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0"
+            android:orientation="horizontal" >
+			<RelativeLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    >
+
+            <ImageView
+                android:id="@+id/lastmonth"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/leftselector"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false" />
+
+			</RelativeLayout>
+            <TextView
+                android:id="@+id/date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06"
+                android:textColor="#787878"
+                android:textStyle="bold"
+                android:textSize="32sp" />
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="月"
+			    android:textColor="@android:color/darker_gray"
+			    android:textSize="14sp"/>
+          <RelativeLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    >
+            <ImageView
+                android:id="@+id/nextmonth"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightselector"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                 />
+
+			</RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dp" >
+
+                <TextView
+                    android:id="@+id/remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="剩余230"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>

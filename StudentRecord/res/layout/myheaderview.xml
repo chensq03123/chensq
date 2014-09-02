@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="false"
+    >
+
+	<RelativeLayout
+	    android:id="@+id/progress_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="230dp"
+	    android:layout_weight="0"
+	    android:background="@drawable/progressbackground" >
+
+	    <com.hustunique.Views.MyCircle
+	        android:id="@+id/progress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true" />
+
+	    <TextView
+	        android:id="@+id/expanse"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:text="￥899"
+	        android:textColor="#fff"
+	        android:textSize="30sp" />
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/progress"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+
+	        <TextView
+	            android:id="@+id/daysremian"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="本月还剩05天"
+	            android:textColor="#fff"
+	            android:textSize="19dp" />
+  			 <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.5" />
+	        <TextView
+	            android:id="@+id/tips"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="日均可用30元"
+	            android:textColor="#fff"
+	            android:textSize="19dp" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.4" />
+	    </LinearLayout>
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/linearLayout1"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="33dp"
+	        android:text="已支出"
+	        android:textColor="#fff"
+	        android:textSize="18dp" />
+
+	</RelativeLayout>
+
+    </LinearLayout>

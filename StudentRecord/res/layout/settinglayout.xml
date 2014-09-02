@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/bgbar" >
+
+       <ImageView
+ 		    android:id="@+id/back"
+ 		    android:layout_width="57dp"
+ 		    android:layout_height="28dp"
+ 		    android:layout_marginBottom="5dp"
+ 		    android:layout_marginLeft="8dp"
+ 		    android:layout_marginTop="10dp"
+ 		    android:src="@drawable/back"
+ 		    android:clickable="true"
+ 		    android:focusable="true" >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="设 置"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+      
+    </FrameLayout>
+    
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#dedede">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="提醒"
+            android:textSize="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/keyboard_selector">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0fff" >
+
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="提醒记账"
+            android:layout_marginLeft="15dp"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <!-- <ImageView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/fra"/> -->
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="10dp"
+                 android:background="#0fff" >
+
+            <Switch 
+                android:id="@+id/settingsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 /></LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/datesetting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/keyboard_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="提醒日期"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/dateset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#01b468"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#0fff"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout4"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/fra" />
+        </LinearLayout>
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timesetting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/keyboard_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="提醒时间"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/timeset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#01b468"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#0fff"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout4"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/fra" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#dedede">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="预算"
+             android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buggetsetting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/keyboard_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="预算设置"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/bugetset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#01b468"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fra" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#dedede">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="其他"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/keyboard_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="关于我们"
+                android:textSize="19dp" />
+        </LinearLayout>
+
+       <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fra" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="#d88f05" >
+
+       <ImageView
+ 		    android:id="@+id/back"
+ 		    android:layout_width="57dp"
+ 		    android:layout_height="28dp"
+ 		    android:layout_marginBottom="5dp"
+ 		    android:layout_marginLeft="8dp"
+ 		    android:layout_marginTop="10dp"
+ 		    android:src="@drawable/back"
+ 		    android:clickable="true"
+ 		    android:focusable="true" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="学僧记账"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+      
+    </FrameLayout>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="#dedede">
+	    <TextView 
+	        android:id="@+id/detail_month"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="25dp"
+	        android:textSize="30sp"
+	        android:text="06"
+	        android:textColor="#8e8e8e"
+	        android:textStyle="bold"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:text="月"	 android:textColor="#8e8e8e"
+	        android:textStyle="bold"/>
+	    <TextView 
+	        android:id="@+id/detail_day"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="35sp"
+	        android:text="25"	 android:textColor="#8e8e8e"
+	        android:textStyle="bold"/>
+	     <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:text="日"	 android:textColor="#8e8e8e"
+	        android:textStyle="bold"/>
+	</LinearLayout>
+
+	<ListView
+	    android:id="@+id/detail_list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	     >
+
+	</ListView>
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_weight="1"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="今日支出"
+	         android:textColor="#8e8e8e"
+	        android:textSize="19sp" />
+
+	    <TextView
+	        android:id="@+id/totalcount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="15dp"
+	        android:text="108.00"
+	         android:textColor="#f90"
+	        android:textSize="22sp" />
+	</LinearLayout>
+
+	</RelativeLayout>
+	</LinearLayout>
+	</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/last_day"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="55dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:src="@drawable/lastdayselector" />
+
+ <!--  android:textColor="@drawable/text_bgn"--> 
+
+        <ImageView
+            android:id="@+id/next_day"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="55dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:src="@drawable/nextdayselector" />
+
+ <!--   android:textColor="@drawable/text_bgn"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+	</RelativeLayout>
+</LinearLayout>
